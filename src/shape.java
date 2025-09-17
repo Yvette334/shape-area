@@ -12,8 +12,8 @@ public class shape {
     }
 
     public void display(){
-        System.out.println("Area of circle is: "+area);
         System.out.println("Area of Triangle is: "+TriangleArea);
+        System.out.println("Area of circle is: "+area);
         System.out.println("Area of Rectangle is: "+RectangleArea);
     }
     public double calculateArea(){
@@ -21,6 +21,10 @@ public class shape {
     }
 
     public static void main(String[] args) {
+        Triangle triangle = new Triangle(7, 3);
+        triangle.calculateArea();
+        triangle.display();
+        
         Circle circle = new Circle(3.14, 2);
         circle.calculateArea();
         circle.display();
@@ -29,9 +33,7 @@ public class shape {
         rectangle.calculateArea();
         rectangle.display();
 
-        Triangle triangle = new Triangle(7, 3);
-        triangle.calculateArea();
-        triangle.display();
+        
 
 
     }
